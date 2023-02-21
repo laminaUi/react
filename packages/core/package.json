@@ -1,6 +1,6 @@
 {
   "name": "@laminaui/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "contains core design system components of luminaUI",
   "keywords": [
@@ -29,14 +29,24 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6"
+  },
+  "peerDependencies": {
+    "@types/react": "^17.0.0 || ^18.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
     "@types/css-modules": "^1.0.2",
     "@types/jest": "^29.4.0",
-    "@types/react": "^18.0.28",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
-    "classnames": "^2.3.2",
     "css-loader": "^6.7.3",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
@@ -47,22 +57,9 @@
     "jest-canvas-mock": "^2.4.0",
     "jest-environment-jsdom": "^29.4.3",
     "prettier": "^2.8.4",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "style-loader": "^3.3.1",
-    "styled-component": "^2.8.0",
-    "styled-components": "^5.3.6",
     "ts-jest": "^29.0.5",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5"
-  },
-  "dependencies": {
-    "@typescript-eslint/parser": "^5.53.0",
-    "eslint-config-prettier": "^8.6.0",
-    "prettier": "^2.8.4",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "typescript-eslint-parser": "^22.0.0"
   }
 }
