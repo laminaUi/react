@@ -1,6 +1,6 @@
 {
   "name": "@laminaui/core",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "description": "contains core design system components of luminaUI",
   "keywords": [
@@ -11,22 +11,20 @@
   "author": "kalanakt <e19198@eng.pdn.ac.lk>",
   "homepage": "https://github.com/luminaUI/ui",
   "license": "ISC",
-  "main": "./dist/cjs/index.js",
+  "main": "./dist/index.js",
   "files": [
     "dist",
     "LICENSE",
     "README.md"
   ],
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"src/**/*.tsx\"",
     "prepare": "npm run build",
-    "build": "yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build": "tsc --module commonjs --outDir dist",
     "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
   "dependencies": {
