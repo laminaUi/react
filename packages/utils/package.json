@@ -1,0 +1,24 @@
+{
+  "name": "utils",
+  "version": "0.0.1",
+  "description": "contains utility functions of luminaUI",
+  "keywords": [
+    "react",
+    "luminaUI",
+    "utils"
+  ],
+  "author": "kalanakt <e19198@eng.pdn.ac.lk>",
+  "homepage": "https://github.com/luminaUI/ui",
+  "license": "ISC",
+  "main": "lib/utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/utils.test.js"
+  }
+}
