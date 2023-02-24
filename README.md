@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/@laminaui/core?style=flat-square)
 ![npm](https://img.shields.io/npm/dw/@laminaui/core)
 
-A collection of reusable React components to use in your projects.
+Lamina UI is a React component library that provides a set of customizable and reusable UI components for building modern web applications. With a focus on simplicity, consistency, and accessibility, Lamina UI makes it easy to create beautiful and functional interfaces that look great on any device. Whether you're building a simple landing page or a complex web app, Lamina UI has everything you need to get started.
 
 ## Installation
 
