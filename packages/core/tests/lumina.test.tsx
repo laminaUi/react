@@ -2,7 +2,7 @@ import * as React from 'react'
 import { render } from '@testing-library/react'
 import 'jest-canvas-mock'
 
-import { Button, Tooltip } from '../src'
+import { Button, Message, Tooltip } from '../src'
 
 function ComponentList() {
   return (
