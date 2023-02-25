@@ -1,6 +1,6 @@
 {
-  "name": "@laminaui/icon",
-  "version": "0.0.2",
+  "name": "@laminaui/theme",
+  "version": "0.0.1",
   "private": false,
   "description": "contains icon components of luminaUI",
   "keywords": [
