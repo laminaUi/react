@@ -177,7 +177,8 @@ const DropdownMenuItem = styled.div`
 type DropdownOption = {
   key: string
   label: React.ReactNode
-  onClick: () => void
+  onClick: () => void,
+  link: string,
 }
 
 type DropdownProps = {
@@ -292,9 +293,14 @@ const Dropdown: React.FC<DropdownProps> = ({
           onMouseLeave={handleDropdownMouseLeave}
         >
           {options.map((option) => (
+            {option.link?
+            <DropdownMenuItem key={option.key} onClick={() => handleMenuItemClick(option.onClick)}>
+              <a href={option.link}>{option.label}</a>
+            </DropdownMenuItem> :
             <DropdownMenuItem key={option.key} onClick={() => handleMenuItemClick(option.onClick)}>
               {option.label}
             </DropdownMenuItem>
+          }
           ))}
         </DropdownMenu>
       )}
