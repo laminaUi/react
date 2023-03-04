@@ -73,7 +73,7 @@ const Alert: React.FC<AlertProps> = ({
     <span>
       {isAlertClose ? (
         <AlertContainer type={type} className={className}>
-          {closable && <CloseButton onClick={onClose ? onClose : CloseHandler}>×</CloseButton>}
+          {closable && <CloseButton onClick={onClose || CloseHandler}>×</CloseButton>}
           {showIcon && <div>Icon Placeholder</div>}
           {message && <div>{message}</div>}
           {description && <div>{description}</div>}
